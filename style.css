@@ -1,0 +1,146 @@
+
+    section.slide{
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 0 !important;
+        overflow: hidden;
+
+    }
+    .slide-content{
+        width: 400%;
+        height: auto;
+        display: flex;
+
+
+    }
+    .slide-content input{
+        display: none;
+    }
+    .slide-box{
+        width: 25%;
+        height: auto;
+        position: relative;
+        text-align: center;
+        transition: 1s;
+
+    }
+    .slide-box img{
+        width: 25%;
+    }
+    .nav-manual, .nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 38%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-manual .manual-btn, .nav-auto div{
+       border: 1px solid #ff0054;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+        margin-right: 10px;
+    }
+    .nav-manual .manual-btn:hover{
+        background-color: #ff0054;
+    }
+    #radio1:checked ~ .nav-auto .auto-btn1{
+        background-color: #ff0054;
+    }
+    #radio2:checked ~ .nav-auto .auto-btn2{
+        background-color: #ff0054;
+    }
+    #radio3:checked ~ .nav-auto .auto-btn3{
+        background-color: #ff0054;
+    }
+    #radio4:checked ~ .nav-auto .auto-btn4{
+        background-color: #ff0054;
+    }
+    #radio5:checked ~ .nav-auto .auto-btn5{
+        background-color: #ff0054;
+    }
+
+
+    #radio1:checked ~ .primeiro{
+        margin-left: 0%;
+        width: 32%;
+    }
+    #radio2:checked ~ .primeiro{
+        margin-left: -25%;
+    }
+    #radio3:checked ~ .primeiro{
+        margin-left: -50%;
+    }
+    #radio4:checked ~ .primeiro{
+        margin-left: -75%;
+    }
+    #radio5:checked ~ .primeiro{
+        margin-left: -100%;
+    }
+
+
+    body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+   
+
+ul{
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+    
+}
+
+nav ul li a:hover{
+color:blue;
+font-size: 24px;
+}
+
+nav ul li a {
+    margin: 0 15px;
+    
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.backgroundimg{
+    position: relative;
+    height: 80vh;
+}
+
+
+
+.content{
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+footer{
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+   
+   
+}
